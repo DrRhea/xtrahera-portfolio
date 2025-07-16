@@ -1,4 +1,4 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
+import { Icon } from "@iconify/react";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import { projects } from "../constants";
 import { useRef, useState } from "react";
@@ -10,9 +10,8 @@ const Works = () => {
   const previewRef = useRef(null);
 
   const [currentIndex, setCurrentIndex] = useState(null);
-  const text = `Featured projects that have been meticulously
-    crafted with passion to drive
-    results and impact.`;
+  const text = `Proyek-proyek pilihan yang dikerjakan dengan penuh dedikasi
+dan inovasi untuk memberikan hasil nyata bagi klien.`;
 
   const mouse = useRef({ x: 0, y: 0 });
   const moveX = useRef(null);
@@ -102,8 +101,8 @@ const Works = () => {
   return (
     <section id="work" className="flex flex-col min-h-screen">
       <AnimatedHeaderSection
-        subTitle={"Logic meets Aesthetics, Seamlessly"}
-        title={"Works"}
+        subTitle={"Logika & Estetika, Menyatu Sempurna"}
+        title={"Portofolio"}
         text={text}
         textColor={"text-black"}
         withScrollTrigger={true}
@@ -130,10 +129,26 @@ const Works = () => {
 
             {/* title */}
             <div className="flex justify-between px-10 text-black transition-all duration-500 md:group-hover:px-12 md:group-hover:text-white">
-              <h2 className="lg:text-[32px] text-[26px] leading-none">
-                {project.name}
-              </h2>
-              <Icon icon="lucide:arrow-up-right" className="md:size-6 size-5" />
+              {project.href ? (
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 hover:underline"
+                >
+                  <h2 className="lg:text-[32px] text-[26px] leading-none">
+                    {project.name}
+                  </h2>
+                  <Icon icon="lucide:arrow-up-right" className="md:size-6 size-5" />
+                </a>
+              ) : (
+                <>
+                  <h2 className="lg:text-[32px] text-[26px] leading-none">
+                    {project.name}
+                  </h2>
+                  <Icon icon="lucide:arrow-up-right" className="md:size-6 size-5" />
+                </>
+              )}
             </div>
             {/* divider */}
             <div className="w-full h-0.5 bg-black/80" />

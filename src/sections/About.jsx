@@ -6,7 +6,7 @@ import gsap from "gsap";
 
 const About = () => {
   const text = `Xtrahera adalah agency software development yang berfokus pada solusi digital inovatif dan berkualitas tinggi. Kami membangun website, aplikasi mobile, dan desain UI/UX yang membantu bisnis bertumbuh dan beradaptasi di era digital.`;
-  const aboutText = `Kami adalah tim profesional yang berpengalaman dalam pengembangan web, mobile, dan desain antarmuka. Setiap project kami kerjakan dengan pendekatan kolaboratif, transparan, dan berorientasi hasil.\n\nMengapa memilih Xtrahera?\n- Kolaborasi erat dengan klien di setiap tahap\n- Desain modern, fungsional, dan user-centric\n- Kode bersih, scalable, dan mudah di-maintain\n- Komitmen pada kualitas, deadline, dan support\n\nBersama Xtrahera, wujudkan transformasi digital bisnis Anda dengan solusi yang tepat guna dan berdampak.`;
+  const aboutText = `Kami adalah tim profesional yang berpengalaman dalam pengembangan web, mobile, dan desain antarmuka. Setiap project kami kerjakan dengan pendekatan kolaboratif, transparan, dan berorientasi hasil.\n\nMengapa memilih Xtrahera?\n1. Kolaborasi erat dengan klien di setiap tahap\n2. Desain modern, fungsional, dan user-centric\n3. Kode bersih, scalable, dan mudah di-maintain\n4. Komitmen pada kualitas, deadline, dan support\n\nBersama Xtrahera, wujudkan transformasi digital bisnis Anda dengan solusi yang tepat guna dan berdampak.`;
   const imgRef = useRef(null);
   useGSAP(() => {
     gsap.to("#about", {
@@ -43,7 +43,7 @@ const About = () => {
       <div className="flex flex-col items-center justify-between gap-16 px-10 pb-16 text-xl font-light tracking-wide lg:flex-row md:text-2xl lg:text-3xl text-white/60">
         <img
           ref={imgRef}
-          src="images/man.jpg"
+          src="images/safira.png"
           alt="Tim Xtrahera"
           className="w-md rounded-3xl"
         />
