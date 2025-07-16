@@ -1,14 +1,36 @@
 import React from 'react'
 import Navbar from './sections/Navbar'
+import { Helmet } from 'react-helmet-async'
 
 const App = () => {
   return (
-    <div className='relative w-screen min-h-screen overflow-x-auto'>
-      <Navbar />
-      <section id='home' className='min-h-screen bg-red-500' />
-      <section id='services' className='min-h-screen bg-green-500' />
-      <section id='about' className='min-h-screen bg-blue-500' />
-    </div>
+    <>
+      <Helmet>
+        <title>Xtrahera Portfolio</title>
+        <meta name="title" content="Xtrahera Portfolio" />
+        <meta name="description" content="Selamat datang di portfolio Xtrahera. Temukan karya, layanan, dan informasi kontak kami di sini." />
+        <meta name="keywords" content="Xtrahera, portfolio, web developer, desain, jasa, kontak, karya" />
+        <meta name="author" content="Xtrahera" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://xtrahera.com/" />
+        <meta property="og:title" content="Xtrahera Portfolio" />
+        <meta property="og:description" content="Selamat datang di portfolio Xtrahera. Temukan karya, layanan, dan informasi kontak kami di sini." />
+        <meta property="og:image" content="https://xtrahera.com/og-image.jpg" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://xtrahera.com/" />
+        <meta property="twitter:title" content="Xtrahera Portfolio" />
+        <meta property="twitter:description" content="Selamat datang di portfolio Xtrahera. Temukan karya, layanan, dan informasi kontak kami di sini." />
+        <meta property="twitter:image" content="https://xtrahera.com/og-image.jpg" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </Helmet>
+      <div className='relative w-screen min-h-screen overflow-x-auto'>
+        <Navbar />
+        <section id='home' className='min-h-screen bg-red-500' />
+        <section id='services' className='min-h-screen bg-green-500' />
+        <section id='about' className='min-h-screen bg-blue-500' />
+      </div>
+    </>
   )
 }
 
