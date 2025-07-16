@@ -6,6 +6,10 @@ import ServiceSummary from './sections/ServiceSummary'
 import { useProgress } from '@react-three/drei'
 import ReactLenis from "lenis/react";
 import Services from './sections/Service'
+import About from './sections/About'
+import Works from './sections/Works'
+import ContactSummary from './sections/ContactSummary'
+import Contact from './sections/Contact'
 
 const App = () => {
   const { progress } = useProgress();
@@ -62,10 +66,10 @@ const App = () => {
         <Hero/>
         <ServiceSummary />
         <Services />
-        {/* <About />
+        <About />
         <Works />
         <ContactSummary />
-        <Contact /> */}
+        <Contact />
       </div>
       </ReactLenis>
     </>

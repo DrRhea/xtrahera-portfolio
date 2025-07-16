@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { socials } from '../contants'
+import { socials } from '../constants'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { Link } from 'react-scroll'
