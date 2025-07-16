@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { socials } from '../contants'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
   const navRef = useRef(null)
@@ -91,7 +92,11 @@ const Navbar = () => {
           {['home', 'services', 'about', 'work', 'contact'].map(
             (section, index) => (
               <div key={index} ref={(el) => (linksRef.current[index] = el)}>
-                <a href="" className='transition-all duration-300 cursor-pointer hover:text-white'>{section}</a>
+                <Link 
+                to={`${section}`} 
+                smooth={true}
+                duration={1000}
+                className='transition-all duration-300 cursor-pointer hover:text-white'>{section}</Link>
               </div>
             )
           )}
