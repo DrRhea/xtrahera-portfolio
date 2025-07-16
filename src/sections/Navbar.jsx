@@ -96,7 +96,8 @@ const Navbar = () => {
                 to={`${section}`} 
                 smooth={true}
                 duration={1000}
-                className='transition-all duration-300 cursor-pointer hover:text-white'>{section}</Link>
+                className='transition-all duration-300 cursor-pointer hover:text-white'
+                onClick={toggleMenu}>{section}</Link>
               </div>
             )
           )}
