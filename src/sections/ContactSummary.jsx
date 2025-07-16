@@ -24,8 +24,8 @@ const ContactSummary = () => {
     gsap.to(containerRef.current, {
       scrollTrigger: {
         trigger: containerRef.current,
-        start: "center center",
-        end: "+=800 center",
+        start: "top center",
+        end: "+=400 center",
         scrub: 0.5,
         pin: true,
         pinSpacing: true,
@@ -36,7 +36,7 @@ const ContactSummary = () => {
   return (
     <section
       ref={containerRef}
-      className="flex flex-col items-center justify-between min-h-screen gap-12 mt-16"
+      className="flex flex-col items-center justify-between min-h-[60vh] gap-8 mt-16 mb-10 md:mb-24"
     >
       <Marquee items={items} />
       <div className="overflow-hidden font-light text-center contact-text-responsive">
