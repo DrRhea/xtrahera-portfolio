@@ -5,15 +5,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const About = () => {
-  const text = `Berkomitmen pada arsitektur yang bersih
-  Saya membangun solusi yang scalable dan berkinerja tinggi
-  dari prototipe hingga produksi`;
-  const aboutText = `Saya terobsesi membangun aplikasi yang cepat dan intuitif—mulai dari UI React yang presisi hingga backend serverless yang andal. Setiap baris kode adalah janji: kualitas yang dirasakan pengguna.
-Ketika tidak sedang mengerjakan project klien:
-⚡️ Berkontribusi open source & eksperimen teknologi baru
-🎥 Berbagi ilmu pemrograman di Twitch/YouTube
-🧗 Panjat tebing (problem solving di dunia nyata)
-🎸 Main gitar sambil menunggu CI pipeline selesai`;
+  const text = `Xtrahera adalah agency software development yang berfokus pada solusi digital inovatif dan berkualitas tinggi. Kami membangun website, aplikasi mobile, dan desain UI/UX yang membantu bisnis bertumbuh dan beradaptasi di era digital.`;
+  const aboutText = `Kami adalah tim profesional yang berpengalaman dalam pengembangan web, mobile, dan desain antarmuka. Setiap project kami kerjakan dengan pendekatan kolaboratif, transparan, dan berorientasi hasil.\n\nMengapa memilih Xtrahera?\n- Kolaborasi erat dengan klien di setiap tahap\n- Desain modern, fungsional, dan user-centric\n- Kode bersih, scalable, dan mudah di-maintain\n- Komitmen pada kualitas, deadline, dan support\n\nBersama Xtrahera, wujudkan transformasi digital bisnis Anda dengan solusi yang tepat guna dan berdampak.`;
   const imgRef = useRef(null);
   useGSAP(() => {
     gsap.to("#about", {
@@ -41,7 +34,7 @@ Ketika tidak sedang mengerjakan project klien:
   return (
     <section id="about" className="min-h-screen bg-black rounded-b-4xl">
       <AnimatedHeaderSection
-        subTitle={"Ngoding dengan tujuan, Dibangun untuk berkembang"}
+        subTitle={"Solusi Digital, Kolaborasi Tanpa Batas"}
         title={"About"}
         text={text}
         textColor={"text-white"}
@@ -51,7 +44,7 @@ Ketika tidak sedang mengerjakan project klien:
         <img
           ref={imgRef}
           src="images/man.jpg"
-          alt="Pria di depan komputer"
+          alt="Tim Xtrahera"
           className="w-md rounded-3xl"
         />
         <AnimatedTextLines text={aboutText} className={"w-full"} />
