@@ -5,15 +5,15 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const About = () => {
-  const text = `Passionate about clean architecture
-    I build scalable, high-performance solutions
-    from prototype to production`;
-  const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
-  When I’m not shipping:
-⚡️ Open-sourcing my latest experiment (or hacking on yours)
-🎥 Teaching devs on Twitch/YouTube—because rising tides lift all ships
-🧗 Rock climbing (problem-solving with real stakes)
-🎸 Strumming chords while CI pipelines pass (multitasking at its finest)`;
+  const text = `Berkomitmen pada arsitektur yang bersih
+  Saya membangun solusi yang scalable dan berkinerja tinggi
+  dari prototipe hingga produksi`;
+  const aboutText = `Saya terobsesi membangun aplikasi yang cepat dan intuitif—mulai dari UI React yang presisi hingga backend serverless yang andal. Setiap baris kode adalah janji: kualitas yang dirasakan pengguna.
+Ketika tidak sedang mengerjakan project klien:
+⚡️ Berkontribusi open source & eksperimen teknologi baru
+🎥 Berbagi ilmu pemrograman di Twitch/YouTube
+🧗 Panjat tebing (problem solving di dunia nyata)
+🎸 Main gitar sambil menunggu CI pipeline selesai`;
   const imgRef = useRef(null);
   useGSAP(() => {
     gsap.to("#about", {
@@ -41,7 +41,7 @@ const About = () => {
   return (
     <section id="about" className="min-h-screen bg-black rounded-b-4xl">
       <AnimatedHeaderSection
-        subTitle={"Cod with purpose, Built to scale"}
+        subTitle={"Ngoding dengan tujuan, Dibangun untuk berkembang"}
         title={"About"}
         text={text}
         textColor={"text-white"}
@@ -51,7 +51,7 @@ const About = () => {
         <img
           ref={imgRef}
           src="images/man.jpg"
-          alt="man"
+          alt="Pria di depan komputer"
           className="w-md rounded-3xl"
         />
         <AnimatedTextLines text={aboutText} className={"w-full"} />
