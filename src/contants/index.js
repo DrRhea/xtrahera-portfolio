@@ -1,77 +1,58 @@
 export const servicesData = [
   {
-    title: "FullStack Development",
+    title: "Web Development",
     description:
-      "Your business deserves a fast, secure, and future-proof digital foundation. I develop custom web apps with clean architecture, optimized databases, and seamless integrations—ensuring reliability at every layer.",
+      "Kami mengembangkan website profesional, responsif, dan cepat untuk mendukung pertumbuhan bisnis Anda.",
     items: [
       {
-        title: "Backend Engineering",
-        description: "(REST/GraphQL APIs, Microservices, Auth Systems)",
-      },
-      {
-        title: "Frontend Excellence",
-        description: "(React, Vue, TypeScript, Interactive UI/UX)",
-      },
-      {
-        title: "Database Design",
-        description: "(SQL/NoSQL Optimization, Scalable Structures)",
-      },
-    ],
-  },
-  {
-    title: "DevOps & Cloud Solutions",
-    description:
-      "Deploying software shouldn't be a gamble. I automate infrastructure, enforce security, and leverage cloud platforms (AWS/Azure) to keep your app running smoothly—24/7, at any scale.",
-    items: [
-      {
-        title: "CI/CD Pipelines",
-        description: "(GitHub Actions, Docker, Kubernetes)",
-      },
-      {
-        title: "Server Management ",
-        description: "(Linux, Nginx, Load Balancing)",
-      },
-      {
-        title: "Performance Tuning",
-        description: "(Caching, Compression, Lighthouse 90+ Scores)",
-      },
-    ],
-  },
-  {
-    title: "Security & Optimization",
-    description:
-      "Slow or hacked apps destroy trust. I harden security (XSS/SQLI protection, OAuth) and optimize bottlenecks so your app stays fast, safe, and scalable as you grow.",
-    items: [
-      {
-        title: "Code Audits",
-        description: "(Refactoring, Tech Debt Cleanup)",
-      },
-      {
-        title: "Pen Testing",
-        description: "(Vulnerability Assessments)",
-      },
-      {
-        title: "SEO Tech Stack",
-        description: "(SSR, Metadata, Structured Data)",
-      },
-    ],
-  },
-  {
-    title: "Web & Mobile Apps",
-    description:
-      "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web and mobile apps (React Native/Flutter) that users love—bridging design and functionality seamlessly.",
-    items: [
-      {
-        title: "Cross-Platform Apps",
-        description: "(Single codebase for iOS/Android/Web)",
-      },
-      {
-        title: "PWAs",
-        description: "(Offline mode, Push Notifications)",
+        title: "Website Company Profile",
+        description: "(Desain & pengembangan website profil perusahaan)"
       },
       {
         title: "E-Commerce",
-        description: "(Checkout flows, Payment Gateways, Inventory APIs)",
+        description: "(Toko online, integrasi pembayaran, katalog produk)"
+      },
+      {
+        title: "Landing Page",
+        description: "(Halaman promosi, campaign, dan konversi)"
+      },
+    ],
+  },
+  {
+    title: "Mobile Development",
+    description:
+      "Kami membangun aplikasi mobile Android & iOS yang user-friendly dan scalable sesuai kebutuhan bisnis Anda.",
+    items: [
+      {
+        title: "Aplikasi Bisnis",
+        description: "(Aplikasi internal, manajemen, dan operasional)"
+      },
+      {
+        title: "Aplikasi E-Commerce",
+        description: "(Belanja online, pembayaran, notifikasi push)"
+      },
+      {
+        title: "Aplikasi Kustom",
+        description: "(Sesuai kebutuhan spesifik bisnis Anda)"
+      },
+    ],
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Kami merancang antarmuka dan pengalaman pengguna yang modern, intuitif, dan efektif untuk web & mobile.",
+    items: [
+      {
+        title: "Desain Website",
+        description: "(UI/UX untuk website, landing page, dashboard)"
+      },
+      {
+        title: "Desain Aplikasi Mobile",
+        description: "(UI/UX untuk aplikasi Android & iOS)"
+      },
+      {
+        title: "Prototyping & Wireframe",
+        description: "(Mockup interaktif, user flow, dan wireframe)"
       },
     ],
   },
@@ -81,7 +62,7 @@ export const projects = [
     id: 1,
     name: "Mobile Accessories E-commerce",
     description:
-      "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
+      "Toko online aksesoris ponsel: casing, charger, kabel, dan power bank dengan dukungan MagSafe.",
     href: "",
     image: "/assets/projects/mobile-accessories-store.jpg",
     bgImage: "/assets/backgrounds/blanket.jpg",
@@ -97,7 +78,7 @@ export const projects = [
     id: 2,
     name: "Plant Shop E-commerce",
     description:
-      "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
+      "Toko tanaman hias langka dan dekoratif dengan tampilan antarmuka yang bersih dan mudah digunakan.",
     href: "",
     image: "/assets/projects/plant-shop.jpg",
     bgImage: "/assets/backgrounds/curtains.jpg",
@@ -112,7 +93,7 @@ export const projects = [
     id: 3,
     name: "Apple Tech Marketplace",
     description:
-      "An e-commerce platform for Apple products and accessories with deals and category filtering.",
+      "Platform e-commerce produk Apple dan aksesoris dengan fitur promo dan filter kategori.",
     href: "",
     image: "/assets/projects/apple-tech-store.jpg",
     bgImage: "/assets/backgrounds/map.jpg",
@@ -127,7 +108,7 @@ export const projects = [
     id: 4,
     name: "Electronics & Gadgets Store",
     description:
-      "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
+      "Toko elektronik multi-kategori: gadget, alat rumah tangga, dan perlengkapan gaming dengan promo khusus.",
     href: "",
     image: "/assets/projects/electronics-store.jpg",
     bgImage: "/assets/backgrounds/poster.jpg",
@@ -142,7 +123,7 @@ export const projects = [
     id: 5,
     name: "Home Decor Marketplace",
     description:
-      "A curated collection of designer home decor items, including furniture and artisan vases.",
+      "Koleksi dekorasi rumah: furnitur dan vas artisan pilihan, desain eksklusif.",
     href: "",
     image: "/assets/projects/home-decor-store.jpg",
     bgImage: "/assets/backgrounds/table.jpg",
@@ -157,7 +138,7 @@ export const projects = [
     id: 6,
     name: "Digital Game Store",
     description:
-      "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
+      "Platform game digital: diskon, top seller, dan pencarian berdasarkan genre.",
     href: "",
     image: "/assets/projects/game-store.jpg",
     bgImage: "/assets/backgrounds/curtains.jpg",
