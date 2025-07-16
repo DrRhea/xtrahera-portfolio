@@ -12,14 +12,17 @@
   },
   "reactSnap": {
     "inlineCss": true,
-    "puppeteerArgs": ["--no-sandbox"],
+    "puppeteerArgs": [
+      "--no-sandbox"
+    ],
     "routes": [
       "/",
       "/#services",
       "/#about",
       "/#work",
       "/#contact"
-    ]
+    ],
+    "source": "dist"
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
@@ -45,7 +48,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
-    "vite": "^7.0.4",
-    "react-snap": "^1.24.0"
+    "react-snap": "^1.23.0",
+    "vite": "^7.0.4"
   }
 }
