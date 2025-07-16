@@ -26,7 +26,7 @@ const Hero = () => {
     })
     tl.from(headerRef.current, {
       opacity: 0, 
-      y: "300",
+      y: "200",
       duration: 1,
       ease: 'circ.out'
     }, "<+0.2")
