@@ -1,0 +1,33 @@
+import React, { useRef } from 'react'
+
+const Hero = () => {
+  const contextRef = useRef(null)
+  const headerRef = useRef(null)
+
+  return (
+    <section id='home' className='flex flex-col justify-end min-h-screen'>
+      <div ref={contextRef}>
+        <div style={{ clipPath: "polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)" }}>
+          <div ref={headerRef} className='flex flex-col justify-center gap-12 pt-16 sm:gap-16'>
+            <p className='text-sm font-light tracking-[0.5rem] uppercase px-10 text-black'>
+              404 No Bugs Found
+            </p>
+            <div>
+              <h1 className='flex flex-col flex-wrap gap-12 text-black uppercase banner-text-responsive sm:gap-16 md:block'>XTRAHERA Innovations</h1>
+            </div>
+            <div className="relative px-10 text-black">
+              <div className='absolute inset-x-0 border-t-2' />
+              <div className='py-12 sm:py-16 text-end'>
+                <p className='font-light uppercase value-text-responsive'>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque harum corrupti soluta expedita facilis deserunt commodi iste quos dignissimos. Reiciendis illum inventore vitae voluptatem. Soluta cupiditate quibusdam saepe dolore doloribus!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default Hero

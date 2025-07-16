@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './sections/Navbar'
 import { Helmet } from 'react-helmet-async'
+import Hero from './sections/Hero'
 
 const App = () => {
   return (
@@ -24,11 +25,10 @@ const App = () => {
         <meta property="twitter:image" content="https://xtrahera.com/og-image.jpg" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </Helmet>
+      
       <div className='relative w-screen min-h-screen overflow-x-auto'>
         <Navbar />
-        <section id='home' className='min-h-screen bg-red-500' />
-        <section id='services' className='min-h-screen bg-green-500' />
-        <section id='about' className='min-h-screen bg-blue-500' />
+        <Hero/>
       </div>
     </>
   )
